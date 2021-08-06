@@ -18,6 +18,7 @@ namespace ChooseYourOwnAdventure
       string noiseChoice = Console.ReadLine();
       noiseChoice = noiseChoice.ToUpper();
       Console.WriteLine(noiseChoice);
+        
       // what did the user decide
       if(noiseChoice == "NO"){
         Console.WriteLine("Not much of an adventure if we don't leave our room!");
@@ -28,6 +29,7 @@ namespace ChooseYourOwnAdventure
         string doorChoice = Console.ReadLine();
         doorChoice = doorChoice.ToUpper();
         Console.WriteLine(doorChoice);
+        
         // what happens when user chooses KNOCK or OPEN
         if(doorChoice == "KNOCK"){
           Console.WriteLine("A voice behind the door speaks. It says, \"Answer this riddle:\"");
@@ -47,6 +49,7 @@ namespace ChooseYourOwnAdventure
           Console.Write("Enter a number (1-3): ");
           string keyChoice = Console.ReadLine();
           keyChoice = keyChoice.ToUpper();
+          
           // switch for key choice
           switch(keyChoice){
             case "1":
